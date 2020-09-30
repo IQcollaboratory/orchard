@@ -1,6 +1,6 @@
 # orchard
 
-![Orchard logo](https://github.com/IQcollaboratory/orchard/blob/master/assets/logo.png)
+![Orchard logo](https://github.com/IQcollaboratory/orchard/blob/master/assets/orchard_logo.png)
 
 A major goal of the IQ Collaboratory is the apples to apples comparison of isolated & quiescent galaxies across observations and simulations. To do so, we have developed `Orchard`, a framework for creating mock surveys from simulated volumes.
 
