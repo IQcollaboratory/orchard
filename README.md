@@ -64,7 +64,7 @@ tng_load_params = {"sim_name":"TNG","plot_color":"#49DF67",
                        
 run_params = {"host_mass_thresh":10.39, ## mass thresh for determining what's a host gal
               "obs_mag_lim":17.7, ## only galaxies brighter than this get counted
-              "obs_sb_lim":35, ## only galaxies brighter than this get counted
+              "obs_sb_lim":23.0, ## only galaxies brighter than this get counted
               "noise_model":"sdss_gr_model", ## select noise model
               "n_sightlines":25 ## how many sightlines to run
              }
