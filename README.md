@@ -33,8 +33,8 @@ This package is currently intended for IQ internal use. If you are interested in
 
 ## output
 
-| Outputs          | Units |
-|------------------|-------|
+| Outputs          | Units | Definition      |
+|------------------|-------|-----------------|
 | ``noisy_spec`` | | Noise-added spectra for all galaxies which are observable in the mock survey |
 | ``noisy_d4000``   |     | Dn4000 measured from the noise-added spectra, used to select quiescent galaxies |
 | ``noisy_haew``   | Å     | Ha EW measured from the noise-added spectra, used to select quiescent galaxies |
