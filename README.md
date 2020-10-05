@@ -18,7 +18,7 @@ This package is currently intended for IQ internal use. If you are interested in
 | ``wavelength``      | Å     | Corresponding wavelength array for synthetic spectra |
 | ``boxsize``         | Mpc   | Simulation box size |
 | ``little_h``        |       | Value of little h used in the simulation |
-| ``rmag``, ``gmag``  |       | SDSS g,r absolute magnitudes derived from the synthetic spectra | 
+| ``gmag``, ``rmag``  |       | SDSS g,r absolute magnitudes derived from the synthetic spectra | 
 | ``d4000``           |       | Dn4000 index measured from the synthetic spectra |
 | ``haew``            | Å     | Ha equivalent width measured from the synthetic spectra |
 | ``ngals``           | N     | Number of resolved galaxies in the simulation box |
@@ -74,3 +74,7 @@ run_params = {"dhost_iso_thresh":1.5, ## Mpc thresh for determining isolation
 tng = Simulation(run_params,**tng_load_params)
 tng.create_multiple_sightlines()
 ```
+
+## flexibility
+
+Currently, ``Orchard`` defines galaxies as quiescent based on Dn4000 and HaEW, and isolated based on projected host distance. Galaxies are selected as observable based on SDSS survey limits, and the noise models are derived from the noise characteristics of SDSS spectroscopy. All of these definitions and limits are easily adjustable, to either use different definitions of quiescence or isolation (e.g., UVJ or distance from the star forming sequence, or central/satellite) or to create synthetic versions of other surveys.
