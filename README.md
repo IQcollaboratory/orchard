@@ -29,7 +29,7 @@ This package is currently intended for IQ internal use. If you are interested in
 | ``host_mass_thresh``      | log10(M⊙)    | The stellar mass above which galaxies are potential host galaxies for determining isolation |
 | ``obs_mag_lim``     | apparent mag   | SDSS r band magnitude threshold below which galaxies are not observed in the mock survey |
 | ``obs_sb_lim`` | mag / arcsec^2 | Surface brightness threshold below which galaxies are not observed in the mock survey |
-| ``noise_model``     |   |  Orchard currently has two models for SDSS-like noise; one based on the apparent r magnitude and based on r magnitude and g-r color |
+| ``noise_model``     |   |  Orchard currently has two models for SDSS-like noise; one based on the apparent r magnitude alone, and one based on both r magnitude and g-r color |
 | ``n_sightlines`` | N | The number of mock survey sightlines to be generated for the simulation box |
 
 ## output
