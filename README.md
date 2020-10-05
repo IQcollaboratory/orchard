@@ -19,6 +19,9 @@ This package is currently intended for IQ internal use. If you are interested in
 | Synthetic wavelength grid | Å     |
 | Box size                  | Mpc   |
 | h                         |       |
+| Absolute photometry       | SDSS g,r |
+| Dn4000                    |          |
+| Ha EW                     | Å        |
 
 | Optional Inputs           | Units |
 |---------------------------|-------|
