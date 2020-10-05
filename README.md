@@ -10,10 +10,16 @@ This package is currently intended for IQ internal use. If you are interested in
 
 ## input
 
-| Required inputs      | Units              | Dimensions |
-|----------------------|--------------------|------------|
-| Galaxy positions     | Mpc                | 3xN        |
-| Galaxy velocities    | km/s               | 3xN        |
-| Synthetic spectra    |                    |            |
-| Synthetic wavelength | \\( \lambda \\)          |            |
-| Stellar mass         | \\( \mathrm{M_\odot} \\) | N          |
+| *Required Inputs*           | *Units* |
+|---------------------------|-------|
+| Galaxy positions          | Mpc   |
+| Galaxy velocities         | km/s  |
+| Galaxy stellar mass       | M⊙    |
+| Synthetic spectra         |       |
+| Synthetic wavelength grid | Å     |
+| Box size                  | Mpc   |
+| h                         |       |
+|                           |       |
+| Optional Inputs           |       |
+| Central / satellite id    |       |
+| SFR                       | M⊙/yr |
