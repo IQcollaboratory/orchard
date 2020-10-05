@@ -18,13 +18,14 @@ This package is currently intended for IQ internal use. If you are interested in
 | ``wavelength``      | Å     | Corresponding wavelength array for synthetic spectra |
 | ``boxsize``         | Mpc   | Simulation box size |
 | ``little_h``        |       | Value of little h used in the simulation |
-| ``rmag, gmag``      | SDSS g,r bands | Apparent magnitudes derived from the synthetic spectra | 
+| ``rmag``, ``gmag``  |       | SDSS g,r absolute magnitudes derived from the synthetic spectra | 
 | ``d4000``           |       | Dn4000 index measured from the synthetic spectra |
 | ``haew``            | Å     | Ha equivalent width measured from the synthetic spectra |
-| ``ngals``           |       | Number of resolved galaxies in the simulation box |
+| ``ngals``           | N     | Number of resolved galaxies in the simulation box |
 
 | Orchard parameters        | Units | Definition      |
 |---------------------------|-------|-----------------|
+| ``dhost_iso_thresh`` | 
 | ``host_mass_thresh``      | log10(M⊙)    | The stellar mass above which galaxies are potential host galaxies for determining isolation |
 | ``obs_mag_lim``     | apparent mag   | SDSS r band magnitude threshold below which galaxies are not observed in the mock survey |
 | ``obs_sb_lim`` | mag / arcsec^2 | Surface brightness threshold below which galaxies are not observed in the mock survey |
