@@ -40,3 +40,33 @@ This package is currently intended for IQ internal use. If you are interested in
 | ``noisy_haew``   | Å     | Ha EW measured from the noise-added spectra, used to select quiescent galaxies |
 | ``dhost_proj`` | Mpc | Projected distance to the nearest potential host galaxy, used to select isolated galaxies |
 | ``quiescent_fraction`` | | The quiescent fraction of isolated galaxies measured from the mock survey |
+
+## example simulation initialization
+
+``tng_load_params = {"sim_name":"illustris-tng100","plot_color":"#49DF67",
+                   ### where the data lives
+                   "data_dir":data_dir,
+                   "pointers":{
+                       "pointer_to_mass":"IQSFSdataTNG-MstarPosVelSat.txt",
+                       "pointer_to_posvel":"IQSFSdataTNG-MstarPosVelSat.txt",
+                       "pointer_to_censat":"IQSFSdataTNG-MstarPosVelSat.txt",
+                       "pointer_to_sfr":"IQSFSdata_TNG_99.txt",
+                       "pointer_to_specdat":"analyzespectra_TNG_ranincl_medcontflux_sidebands.dat",
+                       "pointer_to_spectra":"tng_specs.npy",
+                       "pointer_to_specwav":"FSPS_wave_Full.txt"},
+                   ### sim params
+                   "little_h":0.6774, "boxsize":110.7,
+                   ### data column indices
+                   "columns":{
+                       "mass_col":1, "posvel_col_start":2,  "censat_col":8, "sfr_col":4,
+                       "haew_col":21, "d400_col":19, "rmag_col":5, "gmag_col":6,},}
+                       
+run_params = {"host_mass_thresh":10.39, ## mass thresh for determining what's a host gal
+              "vmax_correction":True, ## vmax correct the q fractions
+              "obs_mag_lim":17.7, ## only galaxies brighter than this get counted
+              "obs_sb_lim":35, ## only galaxies brighter than this get counted
+              "add_noise_to_spectra":True, ## add noise
+              "add_gr_noise":True, ## add color based noise
+              "save_qfrac":True, ## save a npy array at the end of multiple_sightlines
+              "n_sightlines":5 ## how many sightlines per sim
+             }``
