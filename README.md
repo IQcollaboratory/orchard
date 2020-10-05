@@ -10,9 +10,9 @@ This package is currently intended for IQ internal use. If you are interested in
 
 ## input
 
-| Required Inputs           | Units |
-|---------------------------|-------|
-| Galaxy positions          | Mpc   | 
+| Required Inputs           | Units | Definition      |
+|---------------------------|-------|-----------------|
+| ``posvel``         | Mpc,  km/s   | Positions (X, Y, Z) and velocities (Vx, Vy, Vz) for each galaxy in the simulation box |
 | Galaxy velocities         | km/s  |
 | Galaxy stellar mass       | M⊙    |
 | Synthetic spectra         |       |
