@@ -12,7 +12,7 @@ This package is currently intended for IQ internal use. If you are interested in
 
 | Required Inputs           | Units |
 |---------------------------|-------|
-| Galaxy positions          | Mpc   |
+| Galaxy positions          | Mpc   | 
 | Galaxy velocities         | km/s  |
 | Galaxy stellar mass       | M⊙    |
 | Synthetic spectra         |       |
@@ -22,6 +22,13 @@ This package is currently intended for IQ internal use. If you are interested in
 | Absolute photometry       | SDSS g,r bands|
 | Dn4000                    |          |
 | Ha EW                     | Å        |
+
+| Orchard parameters        | Units |
+|---------------------------|-------|
+| Host mass threshold       | M⊙    |
+| Limiting r magnitude      | apparent mag   |
+| Limiting surface brightness | mag / arcsec^2 |
+| Noise model      | rmag or g-r + rmag  |
 
 ## output
 
