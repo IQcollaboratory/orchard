@@ -25,7 +25,7 @@ This package is currently intended for IQ internal use. If you are interested in
 
 | Orchard parameters        | Units | Definition      |
 |---------------------------|-------|-----------------|
-| ``host_mass_thresh``      | M⊙    | The stellar mass above which galaxies are potential host galaxies for determining isolation |
+| ``host_mass_thresh``      | log10(M⊙)    | The stellar mass above which galaxies are potential host galaxies for determining isolation |
 | ``obs_mag_lim``     | apparent mag   | SDSS r band magnitude threshold below which galaxies are not observed in the mock survey |
 | ``obs_sb_lim`` | mag / arcsec^2 | Surface brightness threshold below which galaxies are not observed in the mock survey |
 | ``noise_model``     |   |  Orchard currently has two models for SDSS-like noise; one based on the apparent r magnitude and based on r magnitude and g-r color |
@@ -43,7 +43,8 @@ This package is currently intended for IQ internal use. If you are interested in
 
 ## example simulation initialization
 
-``tng_load_params = {"sim_name":"illustris-tng100","plot_color":"#49DF67",
+```python
+tng_load_params = {"sim_name":"TNG","plot_color":"#49DF67",
                    ### where the data lives
                    "data_dir":data_dir,
                    "pointers":{
@@ -62,11 +63,12 @@ This package is currently intended for IQ internal use. If you are interested in
                        "haew_col":21, "d400_col":19, "rmag_col":5, "gmag_col":6,},}
                        
 run_params = {"host_mass_thresh":10.39, ## mass thresh for determining what's a host gal
-              "vmax_correction":True, ## vmax correct the q fractions
               "obs_mag_lim":17.7, ## only galaxies brighter than this get counted
               "obs_sb_lim":35, ## only galaxies brighter than this get counted
-              "add_noise_to_spectra":True, ## add noise
-              "add_gr_noise":True, ## add color based noise
-              "save_qfrac":True, ## save a npy array at the end of multiple_sightlines
-              "n_sightlines":5 ## how many sightlines per sim
-             }``
+              "noise_model":"sdss_gr_model", ## select noise model
+              "n_sightlines":25 ## how many sightlines to run
+             }
+             
+tng = Simulation(run_params,**tng_load_params)
+tng.create_multiple_sightlines(mass_bins,dhost_bins)
+```
