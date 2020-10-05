@@ -10,7 +10,7 @@ This package is currently intended for IQ internal use. If you are interested in
 
 ## input
 
-| *Required Inputs*           | *Units* |
+| Required Inputs           | Units |
 |---------------------------|-------|
 | Galaxy positions          | Mpc   |
 | Galaxy velocities         | km/s  |
@@ -21,5 +21,6 @@ This package is currently intended for IQ internal use. If you are interested in
 | h                         |       |
 |                           |       |
 | Optional Inputs           |       |
+|---------------------------|-------|
 | Central / satellite id    |       |
 | SFR                       | M⊙/yr |
