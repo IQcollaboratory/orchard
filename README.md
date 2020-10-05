@@ -19,7 +19,7 @@ This package is currently intended for IQ internal use. If you are interested in
 | Synthetic wavelength grid | Å     |
 | Box size                  | Mpc   |
 | h                         |       |
-|                           |       |
+
 | Optional Inputs           |       |
 |---------------------------|-------|
 | Central / satellite id    |       |
