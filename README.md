@@ -25,7 +25,7 @@ This package is currently intended for IQ internal use. If you are interested in
 
 | Orchard parameters        | Units | Definition      |
 |---------------------------|-------|-----------------|
-| ``dhost_iso_thresh`` | 
+| ``dhost_iso_thresh`` | Mpc | The threshold in projected distance to the nearest potential host galaxy beyond which galaxies are considered isolated |
 | ``host_mass_thresh``      | log10(M⊙)    | The stellar mass above which galaxies are potential host galaxies for determining isolation |
 | ``obs_mag_lim``     | apparent mag   | SDSS r band magnitude threshold below which galaxies are not observed in the mock survey |
 | ``obs_sb_lim`` | mag / arcsec^2 | Surface brightness threshold below which galaxies are not observed in the mock survey |
@@ -62,13 +62,15 @@ tng_load_params = {"sim_name":"TNG","plot_color":"#49DF67",
                        "haew_col":21, "d400_col":19, 
                        "rmag_col":5, "gmag_col":6,},}
                        
-run_params = {"host_mass_thresh":10.39, ## mass thresh for determining what's a host gal
+run_params = {"dhost_iso_thresh":1.5, ## Mpc thresh for determining isolation
+              "host_mass_thresh":10.39, ## log(mass) thresh for determining what's a host gal
               "obs_mag_lim":17.7, ## only galaxies brighter than this get counted
               "obs_sb_lim":23.0, ## only galaxies brighter than this get counted
+              "mass_bins":np.arange(8,11.1,0.25), ## stellar mass bins for quiescent fraction measurement
               "noise_model":"sdss_gr_model", ## select noise model
               "n_sightlines":25 ## how many sightlines to run
              }
              
 tng = Simulation(run_params,**tng_load_params)
-tng.create_multiple_sightlines(mass_bins,dhost_bins)
+tng.create_multiple_sightlines()
 ```
