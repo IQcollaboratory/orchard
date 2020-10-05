@@ -20,8 +20,9 @@ This package is currently intended for IQ internal use. If you are interested in
 | Box size                  | Mpc   |
 | h                         |       |
 | Absolute photometry       | SDSS g,r bands|
-| Dn4000                    |          |
-| Ha EW                     | Å        |
+| Dn4000                    |       |
+| Ha EW                     | Å     |
+| Number of galaxies        |       |
 
 | Orchard parameters        | Units |
 |---------------------------|-------|
@@ -32,3 +33,10 @@ This package is currently intended for IQ internal use. If you are interested in
 
 ## output
 
+| Outputs          | Units |
+|------------------|-------|
+| Noise-added spectra | |
+| Noise-added Dn4000   |       |
+| Noise-added Ha EW    | Å     |
+| D_host (projected) | Mpc |
+| Quiescent fraction | |
