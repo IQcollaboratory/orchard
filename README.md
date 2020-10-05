@@ -12,17 +12,16 @@ This package is currently intended for IQ internal use. If you are interested in
 
 | Required Inputs           | Units | Definition      |
 |---------------------------|-------|-----------------|
-| ``posvel``         | Mpc,  km/s   | Positions (X, Y, Z) and velocities (Vx, Vy, Vz) for each galaxy in the simulation box |
-| Galaxy velocities         | km/s  |
-| Galaxy stellar mass       | M⊙    |
-| Synthetic spectra         |       |
-| Synthetic wavelength grid | Å     |
-| Box size                  | Mpc   |
-| h                         |       |
-| Absolute photometry       | SDSS g,r bands|
-| Dn4000                    |       |
-| Ha EW                     | Å     |
-| Number of galaxies        |       |
+| ``posvel``          | Mpc,  km/s   | Positions (X, Y, Z) and velocities (Vx, Vy, Vz) for each galaxy in the simulation box |
+| ``mass``            | M⊙    | Total stellar mass for each galaxy |
+| ``spectra``         |       | Synthetic spectra generated for each galaxy |
+| ``wavelength``      | Å     | Corresponding wavelength array for synthetic spectra |
+| ``boxsize``         | Mpc   | Simulation box size |
+| ``h``               |       | Value of little h assumed for the simulation |
+| ``rmag, gmag``      | SDSS g,r bands | Apparent magnitudes derived from the synthetic spectra | 
+| ``d4000``           |       | Dn4000 index measured from the synthetic spectra |
+| ``haew``            | Å     | Ha equivalent width measured from the synthetic spectra |
+| ``ngals``           |       | Number of resolved galaxies in the simulation box |
 
 | Orchard parameters        | Units |
 |---------------------------|-------|
