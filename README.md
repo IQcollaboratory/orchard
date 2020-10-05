@@ -20,7 +20,7 @@ This package is currently intended for IQ internal use. If you are interested in
 | Box size                  | Mpc   |
 | h                         |       |
 
-| Optional Inputs           |       |
+| Optional Inputs           | Units |
 |---------------------------|-------|
 | Central / satellite id    |       |
 | SFR                       | M⊙/yr |
