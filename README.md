@@ -39,4 +39,4 @@ This package is currently intended for IQ internal use. If you are interested in
 | ``noisy_d4000``   |     | Dn4000 measured from the noise-added spectra, used to select quiescent galaxies |
 | ``noisy_haew``   | Å     | Ha EW measured from the noise-added spectra, used to select quiescent galaxies |
 | ``dhost_proj`` | Mpc | Projected distance to the nearest potential host galaxy, used to select isolated galaxies |
-| ``quiescent_fraction`` | The quiescent fraction of isolated galaxies measured from the mock survey |
+| ``quiescent_fraction`` | | The quiescent fraction of isolated galaxies measured from the mock survey |
